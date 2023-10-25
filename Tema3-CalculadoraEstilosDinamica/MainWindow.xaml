@@ -125,15 +125,6 @@
                 <TextBlock x:Name="recuadroMuestraNumero" Style="{StaticResource TextBlockMuestraNumero}"></TextBlock>
             </Viewbox>
         </Border>
-        <Button x:Name="boton1" Click="Button_Click" Style="{StaticResource Boton1}"></Button>
-        <Button x:Name="boton2" Click="Button_Click" Style="{StaticResource Boton2}"></Button>
-        <Button x:Name="boton3" Click="Button_Click" Style="{StaticResource Boton3}"></Button>
-        <Button x:Name="boton4" Click="Button_Click" Style="{StaticResource Boton4}"></Button>
-        <Button x:Name="boton5" Click="Button_Click" Style="{StaticResource Boton5}"></Button>
-        <Button x:Name="boton6" Click="Button_Click" Style="{StaticResource Boton6}"></Button>
-        <Button x:Name="boton7" Click="Button_Click" Style="{StaticResource Boton7}"></Button>
-        <Button x:Name="boton8" Click="Button_Click" Style="{StaticResource Boton8}"></Button>
-        <Button x:Name="boton9" Click="Button_Click" Style="{StaticResource Boton9}"></Button>
         <Button x:Name="boton0" Click="Button_Click" Style="{StaticResource Boton0}"></Button>
     </Grid>
 </Window>

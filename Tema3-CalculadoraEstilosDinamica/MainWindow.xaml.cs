@@ -24,11 +24,11 @@ namespace Tema3_CalculadoraEstilosDinamica
         {
             InitializeComponent();
 
-            for (int row = 1; row <= 3; row++)
+            for (int f = 1; f <= 3; f++)
             {
-                for (int column = 0; column < 3; column++)
+                for (int c = 0; c < 3; c++)
                 {
-                    int number = (row - 1) * 3 + column + 1;
+                    int number = c + 1 + (f - 1) * 3;
 
                     Button button = new Button
                     {
@@ -38,8 +38,8 @@ namespace Tema3_CalculadoraEstilosDinamica
                         Margin = new Thickness(5)
                     };
 
-                    Grid.SetRow(button, row);
-                    Grid.SetColumn(button, column);
+                    Grid.SetRow(button, f);
+                    Grid.SetColumn(button, c);
 
                     button.Click += Button_Click;
 
