@@ -107,7 +107,7 @@
         </Style>
 
     </Window.Resources>
-    <Grid>
+    <Grid x:Name="myGrid">
         <Grid.RowDefinitions>
             <RowDefinition Height="190*"></RowDefinition>
             <RowDefinition Height="90*"></RowDefinition>

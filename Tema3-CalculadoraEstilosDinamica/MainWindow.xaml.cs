@@ -23,6 +23,40 @@ namespace Tema3_CalculadoraEstilosDinamica
         public MainWindow()
         {
             InitializeComponent();
+
+            for (int row = 1; row <= 3; row++)
+            {
+                for (int column = 0; column < 3; column++)
+                {
+                    int number = (row - 1) * 3 + column + 1;
+
+                    Button button = new Button
+                    {
+                        Content = number.ToString(),
+                        FontSize = 36,
+                        FontWeight = FontWeights.Bold,
+                        Margin = new Thickness(5)
+                    };
+
+                    Grid.SetRow(button, row);
+                    Grid.SetColumn(button, column);
+
+                    button.Click += Button_Click;
+
+                    myGrid.Children.Add(button); 
+                }
+            }
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (sender is Button button)
+            {
+                string buttonText = button.Content.ToString();
+
+                recuadroMuestraNumero.Text += buttonText;
+            }
         }
     }
 }
